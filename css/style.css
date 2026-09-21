@@ -1,0 +1,77 @@
+@font-face{
+    font-family:SuperFortress;
+    src: url(fonts/SuperFortrees-MAL4p.ttf) format('truetype');
+}
+
+body{
+    background-image: url(checkerboard.png);
+    background-color: #612D53;
+    margin:0;
+    padding:0;
+    color: #F3F4F4;
+    font-family: "Noto Sans";
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height:100px;
+    background-color: #2C2C2C;
+    font-family: SuperFortress;
+    font-size: 50px;
+
+}
+
+
+table{
+    table-layout: fixed;
+    margin:auto;
+}
+nav img{
+    width:50px;
+    height:auto;
+}
+nav img:hover{
+    width:60px;
+    height:auto;
+}
+nav a{
+    text-decoration: none;
+    color:#F3F4F4;
+}
+nav a:hover{
+    font-size: 60px;
+}
+
+.nav-table{
+    margin:auto;
+    width:70vw;
+}
+.icon{
+    filter: invert(100%) sepia(34%) saturate(480%) hue-rotate(173deg) brightness(102%) contrast(91%);
+}
+main{
+    display: flex;
+    margin:0px 25vw;
+}
+
+.central{
+    margin:50px 50px;
+    background-color: #2C2C2C;
+}
+
+.month-select{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+#button-left{
+    margin-left: 20px;
+}
+
+#button-right{
+    margin-right: 20px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+    <nav>
+        <table class="nav-table">
+            <tr>
+                <th>
+                    <a href="dev.html">
+                        <img src="assets/svg/code.svg" alt="Logo" class="icon">
+                    </a>
+                </th>
+                <th>
+                    <a href="games.html">
+                        <img src="assets/svg/game-controller--fill.svg" alt="Logo" class="icon">
+                    </a>
+                </th>
+                <th>
+                    <a href="#">SW</a>
+                </th>
+                <th>
+                    <a href="writing.html">
+                        <img src="assets/svg/read-cv-logo--fill.svg" alt="Logo" class="icon">
+                    </a>
+                </th>
+                <th>
+                    <a href="art.html">
+                        <img src="assets/svg/paint-brush--fill.svg" alt="Logo" class="icon">
+                    </a>
+                </th>
+            </tr>
+        </table>
+    </nav>
+    <main>
+        <div class = "central">
+            <div class = "month-select">
+                <div id = "button-left">
+                    <a><</a>
+                </div>
+                <div>
+                    MONTH PLACEHOLDER
+                </div>
+                <div id = "button-right">
+                    <a>></a>
+                </div>
+            </div>
+            <h1>Main</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </main>
+    <div id="y">
+        Original
+    </div>
+</body>
+<script>
+  const xhr = new XMLHttpRequest()
+  xhr.open('GET', 'test.html', true)
+  xhr.onreadystatechange = function() {
+    if (this.readyState!==4) return;
+    if (this.status!==200) return;
+    document.getElementById('y').innerHTML = this.responseText
+  };
+  xhr.send();
+</script>
+</html>
