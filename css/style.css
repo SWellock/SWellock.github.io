@@ -56,9 +56,12 @@ main{
     display: flex;
     margin:0px 25vw;
 }
-
+.wide-main{
+    margin:0px 15vw;
+}
 .central{
-    margin:50px 50px;
+    margin:50px auto;
+    padding:20px;
     background-color: #2C2C2C;
 }
 
@@ -75,3 +78,17 @@ main{
 #button-right{
     margin-right: 20px;
 }
+
+.item-grid{
+    margin: 0 25vw;
+}
+.item img{
+    border-radius: 20px;
+}
+
+.game-window{
+    display:block;
+    margin: 0 auto;
+}
+
+
