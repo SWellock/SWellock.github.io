@@ -1,19 +1,8 @@
-const MONTH_NAMES = [
-    "January", "February", "March", "April", "May", "June",
-"July", "August", "September", "October", "November", "December",
-];
-
-const yearSelect = document.getElementById("year-select");
-const monthSelect = document.getElementById("month-select");
-const monthJump = document.getElementById("month-jump");
-const postList = document.getElementById("post-list");
-const emptyState = document.getElementById("empty-state");
-const periodHeading = document.getElementById("period-heading");
-const periodCount = document.getElementById("period-count");
 
 init();
 
 async function init() {
+    const central = document.querySelector(".central")
     let posts = []
     try {
         const resource = await fetch("manifest.json");
@@ -21,4 +10,14 @@ async function init() {
     } catch (err){
         console.error("Could not load manifest.json", err);
     }
+    for (const post of posts){
+        const {year, month} = splitDate(post.date);
+        const d = document.createElement("div");
+        d.innerHTML = `<h1> ${post.title} </h1><p> ${post.excerpt}</p>`
+        central.appendChild(d)
+    }
+}
+
+function splitDate(dateStr) {
+    return { year: dateStr.slice(0, 4), month: dateStr.slice(5, 7) };
 }

@@ -1,32 +1,14 @@
 [
   {
-    "year": "2026",
-    "month": "09",
-    "monthLabel": "September",
-    "slug": "blog2",
-    "title": "A small win with the garden",
+    "title": "Test Blog One",
     "date": "2026-09-22",
-    "excerpt": "The tomatoes finally came in, and a few things I'd do differently next year.",
-    "path": "2026/09-sept/blog2/index.html"
+    "excerpt": "This is the excerpt for the first test blog",
+    "path": "blogs/testblog1.html"
   },
   {
-    "year": "2026",
-    "month": "09",
-    "monthLabel": "September",
-    "slug": "blog1",
-    "title": "Notes on slow mornings",
+    "title": "Test Blog Two",
     "date": "2026-09-15",
-    "excerpt": "Why I stopped checking my phone before coffee, and what changed.",
-    "path": "2026/09-sept/blog1/index.html"
-  },
-  {
-    "year": "2026",
-    "month": "08",
-    "monthLabel": "August",
-    "slug": "first-post",
-    "title": "Starting this notebook",
-    "date": "2026-08-03",
-    "excerpt": "What this is, and why I'm keeping it in plain HTML instead of a CMS.",
-    "path": "2026/08-aug/first-post/index.html"
+    "excerpt": "This is the excerpt for the second test blog",
+    "path": "blogs/testblog2.html"
   }
 ]

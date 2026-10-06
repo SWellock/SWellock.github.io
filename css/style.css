@@ -65,6 +65,10 @@ main{
     background-color: #2C2C2C;
 }
 
+#front-page{
+    min-width: 33vw;
+}
+
 .date-select{
     display: flex;
     justify-content: space-between;
@@ -80,7 +84,16 @@ main{
 }
 
 .item-grid{
-    margin: 0 25vw;
+    margin: 50px 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item {
+    padding: 10px;
+    background-color: #2C2C2C;
+    border-radius:20px;
 }
 .item img{
     border-radius: 20px;
