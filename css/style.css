@@ -65,17 +65,17 @@ main{
     background-color: #2C2C2C;
 }
 
-.month-select{
+.date-select{
     display: flex;
     justify-content: space-between;
     font-size: 3rem;
 }
 
-#button-left{
+.button-left{
     margin-left: 20px;
 }
 
-#button-right{
+.button-right{
     margin-right: 20px;
 }
 
