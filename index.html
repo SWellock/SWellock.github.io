@@ -38,14 +38,25 @@
     </nav>
     <main>
         <div class = "central">
-            <div class = "month-select">
-                <div id = "button-left">
+            <div class = "date-select" id="year-select">
+                <div class="button-left">
+                    <a><</a>
+                </div>
+                <div>
+                    Year PLACEHOLDER
+                </div>
+                <div class="button-right">
+                    <a>></a>
+                </div>
+            </div>
+            <div class = "date-select" id="month-select">
+                <div class = "button-left">
                     <a><</a>
                 </div>
                 <div>
                     MONTH PLACEHOLDER
                 </div>
-                <div id = "button-right">
+                <div class = "button-right">
                     <a>></a>
                 </div>
             </div>
@@ -57,14 +68,5 @@
         Original
     </div>
 </body>
-<script>
-  const xhr = new XMLHttpRequest()
-  xhr.open('GET', 'test.html', true)
-  xhr.onreadystatechange = function() {
-    if (this.readyState!==4) return;
-    if (this.status!==200) return;
-    document.getElementById('y').innerHTML = this.responseText
-  };
-  xhr.send();
-</script>
+<script src="assets/script.js"> </script>
 </html>
