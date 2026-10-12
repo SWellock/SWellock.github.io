@@ -3,13 +3,13 @@ const monthNames = [
 "July", "August", "September", "October", "November", "December",
 ];
 
-const body = document.querySelector("body")
-const blogShowcase = document.querySelector("#blog-showcase")
+const body = document.querySelector("body");
+const blogShowcase = document.querySelector("#blog-showcase");
 
 init();
 
 async function init() {
-    let posts = []
+    let posts = [];
     let lastKey = null;
     let currentItemGrid = null;
     try {
@@ -21,10 +21,11 @@ async function init() {
     for (var i = 0; i < 1; i++){
         post = posts[i]
         const {year, month} = splitDate(post.date);
-        const d = document.createElement("a");
-        console.log(post.excerpt)
-        d.innerHTML = `<h1> ${post.title} </h1><p> ${post.excerpt}</p><p> ${post.date}</p>`
-        blogShowcase.appendChild(d)
+        const card = document.createElement("div");
+        card.classList.add("secondary-card");
+        card.href = post.path;
+        card.innerHTML = `<a href=${post.path}><h1> ${post.title} </h1><p> ${post.excerpt}</p><p> ${post.date}</p></a>`;
+        blogShowcase.appendChild(card);
     }
 }
 

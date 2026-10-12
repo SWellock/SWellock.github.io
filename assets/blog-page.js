@@ -3,13 +3,13 @@ const monthNames = [
 "July", "August", "September", "October", "November", "December",
 ];
 
-const body = document.querySelector("body")
+const body = document.querySelector("body");
 
 
 init();
 
 async function init() {
-    let posts = []
+    let posts = [];
     let lastKey = null;
     let currentItemGrid = null;
     try {
@@ -22,22 +22,22 @@ async function init() {
         const {year, month} = splitDate(post.date);
         const key = `${year}-${month}`;
         if (key !== lastKey){
-            const dateHeader = document.createElement("h1")
-            const itemGrid = document.createElement("div")
-            itemGrid.classList.add("item-grid")
-            dateHeader.innerHTML = `${monthNames[Number(month) - 1]} ${year} Blogs`
-            dateHeader.classList.add("page-title")
-            body.appendChild(dateHeader)
-            body.appendChild(itemGrid)
-            currentItemGrid = itemGrid
-            lastKey = key
+            const dateHeader = document.createElement("h1");
+            const itemGrid = document.createElement("div");
+            itemGrid.classList.add("item-grid");
+            dateHeader.innerHTML = `${monthNames[Number(month) - 1]} ${year} Blogs`;
+            dateHeader.classList.add("page-title");
+            body.appendChild(dateHeader);
+            body.appendChild(itemGrid);
+            currentItemGrid = itemGrid;
+            lastKey = key;
         }
         const item = document.createElement("a");
-        item.href = post.path
-        console.log(post.title)
-        item.classList.add("item")
-        item.innerHTML = `<h1> ${post.title} </h1><p> ${post.excerpt}</p>`
-        currentItemGrid.appendChild(item)
+        item.href = post.path;
+        console.log(post.title);
+        item.classList.add("item");
+        item.innerHTML = `<h1> ${post.title} </h1><p> ${post.excerpt}</p>`;
+        currentItemGrid.appendChild(item);
     }
 }
 
