@@ -1,14 +1,20 @@
 [
   {
+    "title": "Project For Next Year",
+    "date": "2026-10-11",
+    "excerpt": "Last month I started getting really into computer logic and architecture, partially thanks to a game called Turing Complete...I'd like, as a big project for next year, to make my own computer...",
+    "path": "posts/Blog261011.html"
+  },
+  {
     "title": "Test Blog One",
-    "date": "2026-09-22",
-    "excerpt": "This is the excerpt for the first test blog",
-    "path": "blogs/testblog1.html"
+    "date": "2026-10-05",
+    "excerpt": "Test blog excerpt one",
+    "path": "posts/testblog1.html"
   },
   {
     "title": "Test Blog Two",
-    "date": "2026-09-15",
-    "excerpt": "This is the excerpt for the second test blog",
-    "path": "blogs/testblog2.html"
+    "date": "2026-09-25",
+    "excerpt": "Test blog excerpt two",
+    "path": "posts/testblog2.html"
   }
 ]
