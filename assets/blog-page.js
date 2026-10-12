@@ -32,11 +32,12 @@ async function init() {
             currentItemGrid = itemGrid
             lastKey = key
         }
-        const d = document.createElement("a");
+        const item = document.createElement("a");
+        item.href = post.path
         console.log(post.title)
-        d.classList.add("item")
-        d.innerHTML = `<h1> ${post.title} </h1><p> ${post.excerpt}</p>`
-        currentItemGrid.appendChild(d)
+        item.classList.add("item")
+        item.innerHTML = `<h1> ${post.title} </h1><p> ${post.excerpt}</p>`
+        currentItemGrid.appendChild(item)
     }
 }
 
